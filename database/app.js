@@ -82,7 +82,7 @@ app.get('/fetchDealers/:state', async (req, res) => {
 app.get('/fetchDealer/:id', async (req, res) => {
 //Write your code here
     try {
-        const doc = await Dealerships.findOne({id: req.params.id});
+        const doc = await Dealerships.find({id: req.params.id});
         res.json(doc);
     } catch (error) {
         res.status(500).json({ error: 'Error fetching documents' });
