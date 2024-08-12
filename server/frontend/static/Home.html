@@ -8,6 +8,19 @@
 
 const logout = async (e) => {
 //Include the code for logout here.
+    let logout_url = window.location.origin+"/djangoapp/logout";
+    
+    try {
+        let username = sessionStorage.getItem("username")
+        sessionStorage.removeItem('username')
+
+        alert("Logging out "+username)
+        window.location.href = window.location.origin;
+        window.location.reload();
+        
+    } catch {
+        console.log("Error fetching")
+    }
 };
 
 let checkSession = ()=>{
