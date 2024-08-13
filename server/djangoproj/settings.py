@@ -32,7 +32,6 @@ ALLOWED_HOSTS = ['localhost', 'https://purifythisco-8000.theiadockernext-1-labs-
 
 CSRF_TRUSTED_ORIGINS = [
     'https://purifythisco-8000.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai',
-    'https://purifythisco-8080.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai'
 ]
 
 REST_FRAMEWORK = {
